@@ -1,5 +1,6 @@
 ###Session Actions Extension for Ulauncher
 
+
 A hacky session actions extension for the [ulauncher](https://ulauncher.io/).
 
 (Formerly known as: 'ulauncher-exit-cinnamon', then I realize hardcoding things doesn't make sense.)

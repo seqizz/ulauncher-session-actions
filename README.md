@@ -1,4 +1,4 @@
-#Session Actions Extension for Ulauncher
+### Session Actions Extension for Ulauncher
 
 
 A hacky session actions extension for the [ulauncher](https://ulauncher.io/).

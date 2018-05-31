@@ -1,0 +1,45 @@
+{
+  "manifest_version": "1",
+  "api_version": "1",
+  "name": "Session Actions",
+  "description": "Logout / Reboot / Shutdown / Suspend easily.",
+  "developer_name": "gurkan.in",
+  "icon": "images/exit.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "sessionactions_ext",
+      "type": "keyword",
+      "name": "Session Actions",
+      "description": "Logout / Reboot / Shutdown / Suspend easily.",
+      "default_value": "exit"
+    },
+    {
+        "id": "logout_command",
+        "type": "input",
+        "name": "Command to run to execute logout action",
+        "default_value": "cinnamon-session-quit --logout"
+    },
+    {
+        "id": "shutdown_command",
+        "type": "input",
+        "name": "Command to run to execute shutdown action",
+        "default_value": "cinnamon-session-quit --power-off"
+    },
+    {
+        "id": "reboot_command",
+        "type": "input",
+        "name": "Command to run to execute reboot action",
+        "default_value": "cinnamon-session-quit --reboot"
+    },
+    {
+        "id": "suspend_command",
+        "type": "input",
+        "name": "Command to run to execute suspend action",
+        "default_value": "systemctl suspend"
+    }
+  ]
+}
+

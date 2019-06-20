@@ -1,6 +1,5 @@
 {
-  "manifest_version": "1",
-  "api_version": "1",
+  "api_version": "^2.0.0",
   "name": "Session Actions",
   "description": "Logout / Reboot / Shutdown / Suspend easily.",
   "developer_name": "gurkan.in",

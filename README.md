@@ -1,5 +1,6 @@
 ### Session Actions Extension for Ulauncher
 
+// DEPRECATED: Since I am not using ulauncher anymore, this extension doesn't support the new API. Pull requests & forks are welcome.
 
 A hacky session actions extension for the [ulauncher](https://ulauncher.io/).
 

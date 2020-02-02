@@ -23,6 +23,12 @@
         "default_value": "cinnamon-session-quit --logout"
     },
     {
+        "id": "hibernate_command",
+        "type": "input",
+        "name": "Command to run to execute hibernate action",
+        "default_value": "systemctl hibernate"
+    },
+    {
         "id": "shutdown_command",
         "type": "input",
         "name": "Command to run to execute shutdown action",

@@ -24,12 +24,14 @@ class KeywordQueryEventListener(EventListener):
             'shutdown',
             'halt',
             'suspend',
-            'sleep'
+            'sleep',
+            'hibernate'
         ]
         reboot_command = extension.preferences['reboot_command']
         shutdown_command = extension.preferences['shutdown_command']
         logout_command = extension.preferences['logout_command']
         suspend_command = extension.preferences['suspend_command']
+        hibernate_command = extension.preferences['hibernate_command']
         myList = event.query.split(" ")
         if len(myList) == 1:
             items.append(
@@ -62,6 +64,14 @@ class KeywordQueryEventListener(EventListener):
                     name='Suspend',
                     description='Trigger sleep mode',
                     on_enter=RunScriptAction(suspend_command, None)
+                )
+            )
+            items.append(
+                ExtensionResultItem(
+                    icon='images/hibernate.png',
+                    name='Hibernate',
+                    description='Suspend to disk',
+                    on_enter=RunScriptAction(hibernate_command, None)
                 )
             )
 
@@ -108,6 +118,15 @@ class KeywordQueryEventListener(EventListener):
                                 name='Logout',
                                 description='Logout from session',
                                 on_enter=RunScriptAction(logout_command, None)
+                            )
+                        )
+                    elif option in ['hibernate']:
+                        items.append(
+                            ExtensionResultItem(
+                                icon='images/hibernate.png',
+                                name='Hibernate',
+                                description='Suspend to disk',
+                                on_enter=RunScriptAction(hibernate_command, None)
                             )
                         )
 
